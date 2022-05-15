@@ -18,13 +18,13 @@ const Homepage = () => {
   if (isFetching) return 'Загрузка...'
   return (
     <>
-      <Title level={2} className='heading'>Мировая статистика по криптовалюте</Title>
+      <Title level={2} className='heading'>Мировая статистика по криптовалюте:</Title>
       <Row gutter={[32, 32]}>
-        <Col span={12}><Statistic title='Всего криптовалют:' value={globalStats.total} /></Col>
-        <Col span={12}><Statistic title='Total Exchanges:' value={millify(globalStats.totalExchanges)} /></Col>
+        <Col span={12}><Statistic title='Всего токенов:' value={globalStats.total} /></Col>
+        <Col span={12}><Statistic title='Всего обменников:' value={millify(globalStats.totalExchanges)} /></Col>
         <Col span={12}><Statistic title='Общая капитализация:' value={`$${millify(globalStats.totalMarketCap)}`} /></Col>
         <Col span={12}><Statistic title='Объем торгов за 24 часа:' value={`$${millify(globalStats.total24hVolume)}`} /></Col>
-        <Col span={12}><Statistic title='Total Markets:' value={millify(globalStats.totalMarkets)} /></Col>
+        <Col span={12}><Statistic title='Всего рынков:' value={millify(globalStats.totalMarkets)} /></Col>
       </Row>
 
       <div className="home-heading-container">

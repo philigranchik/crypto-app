@@ -80,11 +80,9 @@ const CryptoDetails = () => {
         <Col className='other-stats-info' >
           <Col className='coin-value-statistic-heading' >
             <Title level={3} className='coin-detailes-heading' >
-            Другая статистика
+              Другая статистика
             </Title>
-            <p>
-            Обзор, показывающий статистику на Cryptocurrencies
-            </p>
+            
           </Col>
           {genericStats.map(({ icon, title, value }) => (
             <Col className='coin-stats' >
@@ -101,13 +99,13 @@ const CryptoDetails = () => {
       <Col className='coin-desc-link' >
         <Row className='coin-desc' >
           <Title level={3} className='coin-details-heading' >
-          Что такое {cryptoDetails.name}
+          Что такое {cryptoDetails.name}?
             {HTMLReactParser(cryptoDetails.description)}
           </Title>
         </Row>
         <Col className='coin-links' >
           <Title level={3} className='coin-details-heading' >
-            {cryptoDetails.name} ссылки
+            {cryptoDetails.name} ссылки:
           </Title>
           {cryptoDetails.links.map((link) => (
             <Row className='coin-link' key={link.name} >
